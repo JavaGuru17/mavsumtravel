@@ -1,8 +1,8 @@
-package uz.mavsumtravel.mavsumtravel.service;
+package uz.mavsumtravel.service;
 
 import org.springframework.stereotype.Service;
-import uz.mavsumtravel.mavsumtravel.model.TelegramUser;
-import uz.mavsumtravel.mavsumtravel.model.enums.UserState;
+import uz.mavsumtravel.model.TelegramUser;
+import uz.mavsumtravel.model.enums.UserState;
 
 @Service
 public interface TelegramUserService {
@@ -12,9 +12,11 @@ public interface TelegramUserService {
 
     String getLang(Long chatId);
 
-    void setLang(Long chatId,String lang);
+    void setLang(Long chatId, String lang);
 
     UserState getState(Long chatId);
 
-    void setState(Long chatId,UserState userState);
+    void setState(Long chatId, UserState userState);
+
+    void goBack(Long chatId);
 }

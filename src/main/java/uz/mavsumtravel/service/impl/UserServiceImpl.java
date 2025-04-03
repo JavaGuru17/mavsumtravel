@@ -1,12 +1,12 @@
-package uz.mavsumtravel.mavsumtravel.service.impl;
+package uz.mavsumtravel.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import uz.mavsumtravel.mavsumtravel.exception.NotFoundException;
-import uz.mavsumtravel.mavsumtravel.model.User;
-import uz.mavsumtravel.mavsumtravel.model.enums.Role;
-import uz.mavsumtravel.mavsumtravel.repository.UserRepository;
-import uz.mavsumtravel.mavsumtravel.service.UserService;
+import uz.mavsumtravel.exception.NotFoundException;
+import uz.mavsumtravel.model.User;
+import uz.mavsumtravel.model.enums.Role;
+import uz.mavsumtravel.repository.UserRepository;
+import uz.mavsumtravel.service.UserService;
 
 import java.util.List;
 import java.util.Optional;

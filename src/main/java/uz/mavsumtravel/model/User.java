@@ -1,8 +1,8 @@
-package uz.mavsumtravel.mavsumtravel.model;
+package uz.mavsumtravel.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import uz.mavsumtravel.mavsumtravel.model.enums.Role;
+import uz.mavsumtravel.model.enums.Role;
 
 @Data
 @Entity
@@ -10,6 +10,7 @@ import uz.mavsumtravel.mavsumtravel.model.enums.Role;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

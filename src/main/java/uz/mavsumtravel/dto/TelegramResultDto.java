@@ -1,4 +1,4 @@
-package uz.mavsumtravel.mavsumtravel.dto;
+package uz.mavsumtravel.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

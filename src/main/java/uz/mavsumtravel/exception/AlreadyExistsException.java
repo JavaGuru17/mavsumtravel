@@ -1,4 +1,4 @@
-package uz.mavsumtravel.mavsumtravel.exception;
+package uz.mavsumtravel.exception;
 
 public class AlreadyExistsException extends RuntimeException {
     public AlreadyExistsException(String m) {

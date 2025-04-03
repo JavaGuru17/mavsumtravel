@@ -1,4 +1,4 @@
-package uz.mavsumtravel.mavsumtravel.service.telegramservice;
+package uz.mavsumtravel.service.telegramservice;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
-import uz.mavsumtravel.mavsumtravel.dto.TelegramResultDto;
+import uz.mavsumtravel.dto.TelegramResultDto;
 import org.telegram.telegrambots.meta.api.objects.WebhookInfo;
 
 import java.io.Serializable;

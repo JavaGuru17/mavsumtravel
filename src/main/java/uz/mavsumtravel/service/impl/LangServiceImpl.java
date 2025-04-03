@@ -1,11 +1,10 @@
-package uz.mavsumtravel.mavsumtravel.service.impl;
+package uz.mavsumtravel.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.stereotype.Service;
-import uz.mavsumtravel.mavsumtravel.model.enums.LangFields;
-import uz.mavsumtravel.mavsumtravel.service.LangService;
-import uz.mavsumtravel.mavsumtravel.service.TelegramUserService;
+import uz.mavsumtravel.service.LangService;
+import uz.mavsumtravel.service.TelegramUserService;
 
 import java.util.Locale;
 
@@ -16,11 +15,11 @@ public class LangServiceImpl implements LangService {
     private final ResourceBundleMessageSource messageSource;
 
     @Override
-    public String getMessage(LangFields keyword, Long chatId) {
+    public String getMessage(String keyword, Long chatId) {
         try {
-            return messageSource.getMessage(keyword.name(),null, new Locale(telegramUserService.getLang(chatId)));
+            return messageSource.getMessage(keyword,null, new Locale(telegramUserService.getLang(chatId)));
         }catch (Exception e){
-            return messageSource.getMessage(keyword.name(),null, new Locale("uz"));
+            return messageSource.getMessage(keyword,null, new Locale("uz"));
         }
     }
 }

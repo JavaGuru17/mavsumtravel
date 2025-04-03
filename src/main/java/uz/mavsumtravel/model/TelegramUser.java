@@ -1,11 +1,11 @@
-package uz.mavsumtravel.mavsumtravel.model;
+package uz.mavsumtravel.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
-import uz.mavsumtravel.mavsumtravel.model.enums.UserState;
+import uz.mavsumtravel.model.enums.UserState;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Entity
@@ -19,6 +19,10 @@ public class TelegramUser {
 
     @Enumerated(EnumType.STRING)
     private UserState state;
+
+    @ElementCollection
+    @Builder.Default
+    private List<UserState> stateHistory = new ArrayList<>();
 
     private String lang;
 }

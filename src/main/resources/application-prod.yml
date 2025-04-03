@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+server:
+  port: 8443
+telegram:
+  url: https://hipartsbot.uz/api/v1/telegram
+  token: 7889466826:AAEjHTkN-SmCHrEK1k7Oe90R60HJfsnWjkI

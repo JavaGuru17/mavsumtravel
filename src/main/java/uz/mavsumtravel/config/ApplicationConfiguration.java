@@ -1,4 +1,4 @@
-package uz.mavsumtravel.mavsumtravel.config;
+package uz.mavsumtravel.config;
 
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
@@ -12,7 +12,7 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 import org.telegram.telegrambots.meta.api.methods.updates.SetWebhook;
-import uz.mavsumtravel.mavsumtravel.service.telegramservice.BotService;
+import uz.mavsumtravel.service.telegramservice.BotService;
 
 import java.io.BufferedReader;
 import java.io.IOException;

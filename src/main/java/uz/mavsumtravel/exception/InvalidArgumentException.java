@@ -1,4 +1,4 @@
-package uz.mavsumtravel.mavsumtravel.exception;
+package uz.mavsumtravel.exception;
 
 public class InvalidArgumentException extends RuntimeException {
     public InvalidArgumentException(String m){

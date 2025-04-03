@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: loc
+  application:
+    name: mavsumtravel
+  jpa:
+    hibernate:
+      ddl-auto: update

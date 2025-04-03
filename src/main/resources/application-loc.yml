@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/mavsumtravel
+    username: postgres
+    password: 123321
+server:
+  port: 8080
+telegram:
+  url: https://raptor-ruling-apparently.ngrok-free.app/api/v1/telegram
+  token: 7889466826:AAEjHTkN-SmCHrEK1k7Oe90R60HJfsnWjkI

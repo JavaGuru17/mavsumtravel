@@ -1,7 +1,7 @@
-package uz.mavsumtravel.mavsumtravel.service;
+package uz.mavsumtravel.service;
 
 import org.springframework.stereotype.Service;
-import uz.mavsumtravel.mavsumtravel.model.User;
+import uz.mavsumtravel.model.User;
 
 import java.util.List;
 
