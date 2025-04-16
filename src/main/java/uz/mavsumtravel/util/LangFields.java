@@ -11,5 +11,10 @@ public interface LangFields {
     String LANGUAGE_CHANGED = "language.changed";
     String CHOOSE_LANGUAGE = "choose.language";
     String WELCOME_USER = "welcome.user";
+    String UNKNOWN_COMMAND = "unknown.command";
+
+    String SHARE_CONTACT = "share.contact";
+    String INPUT_PHONE_NUMBER = "input.phone.number";
+    String INVALID_PHONE_NUMBER = "invalid.phone.number";
 
 }

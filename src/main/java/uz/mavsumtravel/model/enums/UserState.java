@@ -4,5 +4,5 @@ public enum UserState {
     DEFAULT,
     START,
     SETTINGS,
-    LANGUAGE,
+    INPUT_PHONE_NUMBER
 }

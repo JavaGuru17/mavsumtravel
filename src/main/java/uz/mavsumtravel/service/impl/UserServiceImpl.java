@@ -33,6 +33,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public boolean isAdmin(Long chatId) {
+        return userRepository.findByChatId(chatId)
+                .map(user -> user.getRole() == Role.ADMIN)
+                .orElse(false);
+    }
+
+    @Override
     public void setAdminByPhoneNumber(String phoneNumber) {
         if (!(phoneNumber.startsWith("+998"))){
             phoneNumber = "+998" + phoneNumber;
