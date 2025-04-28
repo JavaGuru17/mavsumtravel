@@ -28,19 +28,17 @@ public class KeyboardUtils {
 
     public static InlineKeyboardMarkup inlineMarkup(List<InlineKeyboardButton> buttons) {
         List<List<InlineKeyboardButton>> rows = new ArrayList<>();
-        if (buttons.size() % 2 == 0) {
-            for (int i = 0; i < buttons.size(); i += 2) {
-                rows.add(List.of(buttons.get(i), buttons.get(i + 1)));
-            }
-        } else {
-            for (int i = 0; i <= buttons.size(); i += 2) {
-                if (i + 1 < buttons.size()) {
-                    rows.add(List.of(buttons.get(i), buttons.get(i + 1)));
-                } else {
-                    rows.add(List.of(buttons.get(i)));
-                }
-            }
+        List<InlineKeyboardButton> navigationButtons = new ArrayList<>();
+        List<InlineKeyboardButton> menuButton = new ArrayList<>();
+
+        for (InlineKeyboardButton button : buttons) {
+            (button.getCallbackData().equals("back") ? menuButton : navigationButtons).add(button);
         }
+
+        if (!navigationButtons.isEmpty()) rows.add(new ArrayList<>(navigationButtons));
+
+        if (!menuButton.isEmpty()) rows.add(new ArrayList<>(menuButton));
+
         return new InlineKeyboardMarkup(rows);
     }
 

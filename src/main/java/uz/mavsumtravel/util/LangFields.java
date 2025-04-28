@@ -17,4 +17,5 @@ public interface LangFields {
     String INPUT_PHONE_NUMBER = "input.phone.number";
     String INVALID_PHONE_NUMBER = "invalid.phone.number";
 
+    String HOT_TOURS_NOT_AVAILABLE = "hot.tours.not_available";
 }

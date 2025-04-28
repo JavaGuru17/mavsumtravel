@@ -20,9 +20,18 @@ public class TelegramUser {
     @Enumerated(EnumType.STRING)
     private UserState state;
 
-    @ElementCollection
-    @Builder.Default
+    @Transient
     private List<UserState> stateHistory = new ArrayList<>();
+
+    @Transient
+    private List<Long> hotTourIds = new ArrayList<>();
+
+    private int currentHotTourIndex;
+
+    @Transient
+    private List<Long> specialOfferIds = new ArrayList<>();
+
+    private int currentSpecialOfferIndex;
 
     private String lang;
 }
